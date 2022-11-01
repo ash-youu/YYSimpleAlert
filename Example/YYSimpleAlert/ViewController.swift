@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYSimpleAlert
 
 class ViewController: UIViewController {
 
@@ -15,10 +16,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func showAlert(_ sender: UIButton) {
+        YYSimpleAlert(title: "Is this simple?", confirm: "Yes") {
+            print("It is so simple")
+        }.show(in: view)
     }
-
 }
 

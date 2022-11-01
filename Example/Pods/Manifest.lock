@@ -1,0 +1,16 @@
+PODS:
+  - YYSimpleAlert (0.1.0)
+
+DEPENDENCIES:
+  - YYSimpleAlert (from `../`)
+
+EXTERNAL SOURCES:
+  YYSimpleAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YYSimpleAlert: 641880ceceb7b7d73c1d9a884b1349beb2bdc573
+
+PODFILE CHECKSUM: d08e3e647893d8b445378d148f050cd7f911abbe
+
+COCOAPODS: 1.11.3
