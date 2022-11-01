@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		264CBBA029115D0900139239 /* YYSimpleAlert.docc in Sources */ = {isa = PBXBuildFile; fileRef = 264CBB9F29115D0900139239 /* YYSimpleAlert.docc */; };
 		264CBBA629115D0900139239 /* YYSimpleAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264CBB9B29115D0900139239 /* YYSimpleAlert.framework */; };
 		264CBBAB29115D0900139239 /* YYSimpleAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CBBAA29115D0900139239 /* YYSimpleAlertTests.swift */; };
 		264CBBAC29115D0900139239 /* YYSimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 264CBB9E29115D0900139239 /* YYSimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		264CBBBC29115E5100139239 /* YYSimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CBBBB29115E0900139239 /* YYSimpleAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,7 @@
 		264CBB9F29115D0900139239 /* YYSimpleAlert.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = YYSimpleAlert.docc; sourceTree = "<group>"; };
 		264CBBA529115D0900139239 /* YYSimpleAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYSimpleAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		264CBBAA29115D0900139239 /* YYSimpleAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSimpleAlertTests.swift; sourceTree = "<group>"; };
+		264CBBBB29115E0900139239 /* YYSimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSimpleAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		264CBB9D29115D0900139239 /* YYSimpleAlert */ = {
 			isa = PBXGroup;
 			children = (
+				264CBBBA29115E0900139239 /* Classes */,
 				264CBB9E29115D0900139239 /* YYSimpleAlert.h */,
 				264CBB9F29115D0900139239 /* YYSimpleAlert.docc */,
 			);
@@ -83,6 +85,14 @@
 				264CBBAA29115D0900139239 /* YYSimpleAlertTests.swift */,
 			);
 			path = YYSimpleAlertTests;
+			sourceTree = "<group>";
+		};
+		264CBBBA29115E0900139239 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				264CBBBB29115E0900139239 /* YYSimpleAlert.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264CBBA029115D0900139239 /* YYSimpleAlert.docc in Sources */,
+				264CBBBC29115E5100139239 /* YYSimpleAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +404,7 @@
 		264CBBB329115D0900139239 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +420,7 @@
 		264CBBB429115D0900139239 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
